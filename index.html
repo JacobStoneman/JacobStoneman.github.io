@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8" content="width=device-width, initial-scale=1"/>
 	<link href="StyleSheet.css" rel="stylesheet" />
 	<style>
 
@@ -10,8 +10,117 @@
 	<title></title>
 </head>
 <body>
+	<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+	<h1>Jacob Stoneman</h1>
 	<div id="Banner">
 		<h1>Game Programmer Portfolio</h1>
+		<a href="https://github.com/JacobStoneman">
+			<img class="icon" src="Images/github.png" />
+		</a>
+		<a href="https://twitter.com/JacobStoneman2">
+			<img class="icon" src="Images/twitter.png" />
+		</a>
 	</div>
+	<h2><h2span>About Me</h2span></h2>
+
+	<div id="AboutMeP">
+		<p>
+			Hi, I am a games programmer who has recently graduated from Coventry University with a degree in Games Technology. Below is a showcase of work I have completed during university, collaborative game jams and personal projects. I am always happy to chat about job opportunities or projects I've worked on.
+		</p>
+	</div>
+
+	<div class="grid-container">
+		<div>
+			<div class="projectContainer">
+				<img src="Images/NPCGen.png" alt="Procedural Generation of NPC's" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="Images/ChessEngine.png" alt="Chess Engine" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Chess Engine</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="Images/ProcGenTerrain.png" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Terrain Generation</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="https://picsum.photos/400/300?random=1" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="https://picsum.photos/400/300?random=2" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="https://picsum.photos/400/300?random=3" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="https://picsum.photos/400/300?random=4" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="projectContainer">
+				<img src="https://picsum.photos/400/300?random=5" alt="Terrain Generation" class="projectImage">
+				<div class="projectOverlay">
+					<div class="overlayText">Procedural Generation of NPC's</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		//Get the button
+		var scrollButton = document.getElementById("scrollBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				scrollButton.style.display = "block";
+			} else {
+				scrollButton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>
