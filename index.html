@@ -17,17 +17,30 @@
 	<title>Home</title>
 </head>
 <body>
-	<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="toTopBtn" title="Go to top"><span>Top</span></button>
 
 	<h1>Jacob Stoneman</h1>
 	<div id="Banner">
 		<h1>Game Programmer Portfolio</h1>
-		<a href="https://github.com/JacobStoneman">
-			<img class="icon" src="Images/github.png" />
-		</a>
-		<a href="https://twitter.com/JacobStoneman2">
-			<img class="icon" src="Images/twitter.png" />
-		</a>
+		<div class="grid-container">
+			<div style="text-align:right; width: 45vw">
+				<address>
+					<a href="mailto:jacobstoneman15@gmail.com">
+						<img class="icon" src="Images/email.png">
+					</a>
+				</address>
+			</div>
+			<div>
+				<a href="https://github.com/JacobStoneman">
+					<img class="icon" src="Images/github.png" />
+				</a>
+			</div>
+			<div style="text-align:left; width: 45vw">
+				<a href="https://twitter.com/JacobStoneman2">
+					<img class="icon" src="Images/twitter.png" />
+				</a>
+			</div>
+		</div>
 	</div>
 	<h2><span>About Me</span></h2>
 
@@ -80,8 +93,8 @@
 		</div>
 		<div>
 			<div class="projectContainer">
-				<img src="https://picsum.photos/400/300?random=4" alt="Global Game Jam 2020" class="projectImage">
 				<a href="GGJ2020.html">
+				<img src="Images/RoboRepair.PNG" alt="Global Game Jam 2020" class="projectImage">
 					<div class="projectOverlay">
 						<div class="overlayText">Global Game Jam 2020</div>
 					</div>
@@ -112,7 +125,7 @@
 
 	<script>
 		//Get the button
-		var scrollButton = document.getElementById("scrollBtn");
+		var scrollButton = document.getElementById("toTopBtn");
 
 		// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function () { scrollFunction() };
@@ -129,7 +142,6 @@
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-			behavior: 'smooth' 
 		}
 	</script>
 </body>
