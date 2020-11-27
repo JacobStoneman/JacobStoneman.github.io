@@ -33,6 +33,9 @@ h2{
 	-ms-user-select: none;
 	user-select: none;
 }
+	.icon:hover{
+		width: 6vw;
+	}
 #Banner {
 	background-color: #EEEEEE;
 	text-align: center;
@@ -51,7 +54,7 @@ h2{
 	#Banner .grid-container {
 		text-align: center;
 		position: relative;
-		top: 35%;
+		top: 25%;
 	}
 #AboutMeP {
 		margin-left: 35vw;
