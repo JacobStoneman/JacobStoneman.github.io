@@ -105,4 +105,47 @@
 
 .gridPWrap {
 	height: 65%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
+
+.gitLink {
+	background-size: contain;
+	border: 5px solid white;
+	background-color: white;
+	width: 5vw;
+	margin: 1vmin 1vmin;
+	border-radius: 1vmin;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: 0.5s;
+}
+	.gitLink:hover {
+		width: 6vw;
+	}
+#gitLink span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+#gitLink span:after {
+	content: '\fe3d';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#gitLink:hover span {
+	padding-right: 25px;
+}
+
+	#gitLink:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
